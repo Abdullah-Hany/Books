@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/top"
+        >
+
+        <ImageView
+            android:id="@+id/photo_image_view"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/content"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="11dp"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="13dp"
+            android:layout_toEndOf="@+id/photo_image_view"
+            android:layout_toRightOf="@+id/photo_image_view"
+            android:text="Title"
+            android:id="@+id/title"
+            android:textSize="50px"
+            android:fontFamily="sans-serif-medium"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/title"
+            android:layout_marginLeft="61dp"
+            android:layout_marginStart="61dp"
+            android:paddingRight="20dp"
+            android:layout_toEndOf="@+id/authors"
+            android:layout_toRightOf="@+id/authors"
+            android:text="Google Maps Mashups with Google Mapplets"
+            />
+
+
+        <TextView
+            android:id="@+id/authors"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/photo_image_view"
+            android:layout_alignLeft="@+id/title"
+            android:layout_alignStart="@+id/title"
+            android:text="Authors"
+            android:textSize="50px"
+            android:fontFamily="sans-serif-medium"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/title2"
+            android:layout_alignStart="@+id/title2"
+            android:layout_alignTop="@+id/authors"
+
+            android:id="@+id/authors2"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="8dp">
+
+            <TextView
+                android:id="@+id/publisher"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:fontFamily="sans-serif-medium"
+                android:paddingTop="16dp"
+                android:text="Publisher"
+                android:textSize="40px"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/published_date"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:paddingTop="16dp"
+                android:text="Published Date"
+                android:textSize="40px"
+                android:fontFamily="sans-serif-medium"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/language"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:paddingTop="16dp"
+                android:text="Language"
+                android:textSize="40px"
+                android:fontFamily="sans-serif-medium"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/country"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:paddingTop="16dp"
+                android:text="Country"
+                android:textSize="40px"
+                android:fontFamily="sans-serif-medium"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:paddingTop="16dp"
+                android:text="Price"
+                android:textSize="40px"
+                android:fontFamily="sans-serif-medium"
+                android:textStyle="bold"
+                />
+            <Button
+                android:id="@+id/sample"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="Book sample"
+                android:layout_margin="16dp"
+
+                />
+
+
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            >
+
+            <TextView
+                android:id="@+id/publisher2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingBottom="16dp"
+                android:paddingRight="6dp"
+                android:paddingTop="16dp"
+                android:text="dar el shrouq" />
+
+            <TextView
+                android:id="@+id/published_date2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="16dp"
+                android:paddingBottom="16dp"
+
+                android:paddingTop="16dp"
+                android:text="2016-03-09" />
+
+            <TextView
+                android:id="@+id/language2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="Ar"
+                android:paddingLeft="16dp"
+                android:paddingBottom="16dp"
+
+                android:paddingTop="16dp"/>
+
+            <TextView
+                android:id="@+id/country2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="116dp"
+                android:layout_marginRight="116dp"
+                android:paddingLeft="16dp"
+                android:paddingBottom="16dp"
+
+                android:paddingTop="16dp"
+                android:text="Egypt" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingBottom="16dp"
+
+                android:paddingTop="16dp"
+                >
+                <TextView
+                    android:id="@+id/price2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="200.0"
+                    android:paddingRight="32dp"/>
+
+                <TextView
+                    android:id="@+id/currency_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/price2"
+                    android:layout_toRightOf="@+id/price2"
+                    android:paddingLeft="8dp"
+                    android:text="egp" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/buy"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="Buy Book"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="12dp"
+
+
+
+                />
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
